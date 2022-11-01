@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+</head>
+
+ <body>
+<form action="#" th:action="@{/visiterreg}"
+    th:object="${flatentity}" method="post"
+    enctype="multipart/form-data">
+
+Flat Owner Name:<input Type="Text" id="flatOwnerName" name="flatOwnerName" th:field="*{flatOwnerName}"/></br>
+
+Flat Number<input Type="number" id="flatnumber" th:field="*{flatnumber}" name="Flat Number"/></br>
+Entry Date Time:<input Type="Date" th:field="*{entryDate}" id="entryDate" name="entryDate"/></br>
+Exit Date Time <input Type="Date" id="exitDate" th:field="*{exitDate}" name="exitDate"/></br>
+Photo <input Type="file" name="image" accept="image/*"/></br></br></br>
+<input Type="Submit" name="Submit"/></br> </form>
+</body>
+</html>
+
